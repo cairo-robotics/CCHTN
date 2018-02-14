@@ -1,0 +1,10 @@
+string node_uid
+string agent
+bool replace_node
+string replaced_node
+bool claim_node
+bool release_node
+bool completed_node
+---
+bool success
+

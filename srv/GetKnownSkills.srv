@@ -1,0 +1,3 @@
+---
+string[] filenames
+bool success

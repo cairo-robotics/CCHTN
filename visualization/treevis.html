@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+			<script src="jquery-1.9.0.min.js" type="text/javascript"></script> 
+		<script type="text/javascript" src="jquery-ui-1.10.3.custom.js"> </script>
+		-->
+    <script src="jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="jquery_ui/jquery-ui.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="alertify.min.js"></script>
+    <script type="text/javascript" src="eventemitter2.js">
+    </script>
+    <script type="text/javascript" src="roslib.js">
+    </script>
+    <script type="text/javascript" src="node.js">
+    </script>
+    <script type="text/javascript" src="treevis.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="alertify/alertify.core.css" />
+    <link rel="stylesheet" type="text/css" href="alertify/alertify.default.css" />
+    <link rel="stylesheet" type="text/css" href="treevis.css" />
+</head>
+
+<body>
+    <div id="box1"> </div>
+    <script>
+        window.htn_server = new Server(new Node("Empty Task"), "tree", [], []);
+    </script>
+    <script type="text/javascript" src="honda_dashboard.js">
+    </script>
+    <script>
+        tree.drawTree('#box1');
+    </script>
+</body>
+
+</html>

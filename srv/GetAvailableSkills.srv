@@ -1,0 +1,5 @@
+string agent_name
+---
+string[] available_skills
+bool success
+
