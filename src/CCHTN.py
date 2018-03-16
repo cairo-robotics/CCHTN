@@ -202,6 +202,10 @@ class CCHTN(object):
     Add an activity with uid new_activity_id to root graph or node identified by parent_activity_id with attributes data
     '''
     parent_node = None
+
+    if self._root_uid in self._graph.node:
+      parent_node = self._graph.node[self._root_uid] # Default parent node is (self._root_uid)
+   
     if parent_activity_id is not None:
       parent_node = self.get_node(parent_activity_id)
       if parent_node is None: raise Exception('No activity with uid %s in graph to append a new activity within.' % parent_activity_id)
